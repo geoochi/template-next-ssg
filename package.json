@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "scripts": {
+    "d": "bun sitemap && next dev --turbopack",
+    "b": "bun sitemap && next build --no-lint",
+    "p": "bunx http-server out -a localhost -p 5173",
+    "start": "next start",
+    "sitemap": "bun scripts/generate-sitemap.js"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.525.0",
+    "next": "^15.3.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/node": "^24.0.8",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.8.3"
+  }
+}
